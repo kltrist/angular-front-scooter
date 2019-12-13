@@ -1,0 +1,37 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Vacant</th>
+      <th>Maker</th>
+      <th>Model</th>
+      <th>Battery</th>
+      <th>Max speed</th>
+      <th>Carrying</th>
+      <th>Color</th>
+      <th>Weight</th>
+      <th>Engine power</th>
+      <th>Tariff</th>
+      <th>Coordinate</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let scooter of scooters">
+      <td>{{scooter.vacant}}</td>
+      <td>{{scooter.maker}}</td>
+      <td>{{scooter.model}}</td>
+      <td>{{scooter.batteryCapacity}}</td>
+      <td>{{scooter.maxSpeed}}</td>
+      <td>{{scooter.carrying}}</td>
+      <td>{{scooter.color}}</td>
+      <td>{{scooter.weight}}</td>
+      <td>{{scooter.enginePower}}</td>
+      <td>{{scooter.tariffId}}</td>
+     <td><a href="http://www.google.com/maps/place/{{scooter.latitude}},{{scooter.longitude}}" >Show</a></td>
+      <!--      <td><button class="btn btn-danger" (click)="deleteEmployee(employee)"> Delete Employee</button></td>-->
+    </tr>
+    </tbody>
+  </table>
+
+</div>

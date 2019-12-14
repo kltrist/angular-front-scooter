@@ -36,9 +36,8 @@ export class MovementComponent implements OnInit {
   ngOnInit() {
   }
 
-  movementHistory: FullMovement[];
   movement: Movement;
-
+  isShow: boolean = false;
 
 
   finishMovement() {
@@ -52,8 +51,12 @@ export class MovementComponent implements OnInit {
         startTime: value['startTime'],
         endTime: value['endTime']
       };
+      this.isShow = true;
     });
+
   }
 
+
 }
+
 

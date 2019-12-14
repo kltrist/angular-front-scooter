@@ -1,0 +1,66 @@
+<!--<div>-->
+<!--  <h3>Cost: {{movement.cost}}</h3>-->
+<!--  <h3> Mileage: {{movement.mileage}}</h3>-->
+<!--  <h3> Start time: {{movement.startTime}}</h3>-->
+<!--  <h3> End time: {{movement.endTime}}</h3>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<button class="btn btn-danger" (click)="finishMovement()">Finish</button>-->
+<!--<p id="demo"></p>-->
+
+<!--<script>-->
+<!--    // Set the date we're counting down to-->
+<!--    let countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();-->
+
+<!--    // Update the count down every 1 second-->
+<!--    let x = setInterval(function() {-->
+
+<!--        // Get today's date and time-->
+<!--        let now = new Date().getTime();-->
+
+<!--        // Find the distance between now and the count down date-->
+<!--        let distance = countDownDate - now;-->
+
+<!--        // Time calculations for days, hours, minutes and seconds-->
+<!--        let days = Math.floor(distance / (1000 * 60 * 60 * 24));-->
+<!--        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));-->
+<!--        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));-->
+<!--        let seconds = Math.floor((distance % (1000 * 60)) / 1000);-->
+
+<!--        // Display the result in the element with id="demo"-->
+<!--        document.getElementById("demo").innerHTML = days + "d " + hours + "h "-->
+<!--            + minutes + "m " + seconds + "s ";-->
+
+<!--        // If the count down is finished, write some text-->
+<!--        if (distance < 0) {-->
+<!--            clearInterval(x);-->
+<!--            document.getElementById("demo").innerHTML = "EXPIRED";-->
+<!--        }-->
+<!--    }, 1000);-->
+<!--</script>-->
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    p {
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+  </style>
+  <title>scooter</title>
+</head>
+<body>
+
+<h3>Cost: {{movement.cost}}</h3>
+<h3> Mileage: {{movement.mileage}}</h3>
+<h3> Start time: {{movement.startTime}}</h3>
+<h3> End time: {{movement.endTime}}</h3>
+<br>
+
+<button class="btn btn-danger" (click)="finishMovement()">Finish</button>
+
+</body>
+</html>

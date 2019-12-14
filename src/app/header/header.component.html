@@ -5,8 +5,10 @@
   <ul class="navbar-nav">
     <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/scooters/nearest" class="nav-link">View nearest scooters</a></li>
     <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/scooters" class="nav-link">All scooters</a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/order-history" class="nav-link">Order history</a></li>
     <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
     <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
+
 
 
   </ul>

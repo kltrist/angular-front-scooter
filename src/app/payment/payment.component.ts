@@ -28,8 +28,9 @@ export class PaymentComponent implements OnInit {
         cvv: json['cvv']
       }
     };
+    localStorage.setItem("order",JSON.stringify(order));
     this.orderService.startRide(order);
-    this.router.navigate(['/']);
+    this.router.navigate(['/movement']);
   }
 
 }

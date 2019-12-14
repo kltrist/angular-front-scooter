@@ -1,0 +1,35 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Scooter number</th>
+      <th>Start coordinate</th>
+      <th>Finish coordinate</th>
+      <th>Cost</th>
+      <th>Mileage</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Active</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{order.scooterId}}</td>
+      <td><a
+        href="http://www.google.com/maps/place/{{order.startCoordinate.latitude}},{{order.startCoordinate.longitude}}">Show</a>
+      </td>
+      <td><a
+        href="http://www.google.com/maps/place/{{order.finishCoordinate.latitude}},{{order.finishCoordinate.longitude}}">Show</a>
+      </td>
+      <td>{{order.cost}}</td>
+      <td>{{order.mileage}}</td>
+      <td>{{order.startTime}}</td>
+      <td>{{order.endTime}}</td>
+      <td>{{order.active}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       },
       error => {
         this.invalidLogin = true
-
+alert('Incorrect username or password!')
       }
     )
     );

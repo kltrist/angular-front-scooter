@@ -40,6 +40,9 @@ import {PaymentComponent} from './payment/payment.component';
 import {OrderService} from './service/order.service';
 import {ScooterService} from './scooter.service';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { HomeComponent } from './home/home.component';
+import { MovementComponent } from './movement/movement.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
     LogoutComponent,
     ScooterComponent,
     AllScootersComponent,
-    PaymentComponent
+    PaymentComponent,
+    HomeComponent,
+    MovementComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
